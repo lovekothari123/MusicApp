@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dj_graldo_golden_back"
+    tools:context="com.djgeraldo.fragments.SponsorDetails">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/data"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/colorCode"
+                    tools:text="title"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/address"
+                    android:layout_below="@id/title"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:textColor="@android:color/white"
+                    tools:text="address"/>
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_height="60dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:gravity="center"
+                android:text="Description"
+                android:layout_below="@id/data"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="#6B6B6B"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_below="@id/description"
+                android:id="@+id/descriptionData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                tools:text="descriptionData"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_margin="10dp"
+                android:layout_below="@id/descriptionData"
+                android:id="@+id/detailsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

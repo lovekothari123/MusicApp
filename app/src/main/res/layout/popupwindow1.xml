@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/popupwindow1"
+    android:gravity="center"
+    android:layout_gravity="center"
+    >
+    <TextView
+        android:id="@+id/playlistPopUp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/headerback3"
+        android:textColor="@android:color/white"
+        android:text="Add to Playlist"
+        />
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/favouritesPopUp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/headerback3"
+        android:layout_height="40dp"
+        android:text="Add to Favorites"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/favouritesPopUp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Remove From Playlist"
+       android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_below="@id/playlistPopUp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_height="40dp"
+        android:text="Remove From Favorites"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

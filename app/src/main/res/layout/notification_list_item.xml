@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/notification_list"
+    android:background="@drawable/selector_menu"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/selector_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/notificationMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Name"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_marginBottom="6dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hedaerspareter"/>
+
+
+</LinearLayout>

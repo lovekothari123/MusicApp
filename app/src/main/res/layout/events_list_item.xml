@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/selector_menu"
+    android:id="@+id/eventsList"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_marginRight="6dp"
+        android:id="@+id/events"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="79dp"
+       >
+        <ImageView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/calImage"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="16sp"
+                tools:text="Location"
+                android:id="@+id/location"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"/>
+
+            <TextView
+                tools:text="Place"
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.5"
+                    tools:text="date and time"
+                    android:id="@+id/dateTimeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:src="@drawable/arrow"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@id/events"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/hedaerspareter"/>
+
+</RelativeLayout>

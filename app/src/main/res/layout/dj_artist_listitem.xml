@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="61dp"
+    android:id="@+id/DjList"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/elements"
+        android:gravity="center"
+        android:padding="6dp"
+        android:background="@drawable/selector_menu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_gravity="center"
+            android:id="@+id/firstImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dj_gradlo_app_logo"
+            />
+
+        <TextView
+            android:id="@+id/middleText"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.8"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:text="Title" />
+
+        <ImageView
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/right_arrow"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/elements"
+        android:layout_width="match_parent"
+        android:background="@drawable/hedaerspareter"
+        android:layout_height="1dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="91dp">
+
+    <LinearLayout
+        android:id="@+id/videoList"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="90dp"
+        android:background="@drawable/selector_menu"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/videoImage"
+            android:layout_weight="0.65"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="16sp"
+                tools:text="Video Name"
+                android:id="@+id/videoName"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                />
+
+            <TextView
+                tools:text="date"
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/arrow_yellow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/videoList"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/hedaerspareter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</RelativeLayout>

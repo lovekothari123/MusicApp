@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.djgeraldo.fragments.SocialMedia">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dj_geraldo_social_media"
+        android:scaleType="fitXY"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="-52dp"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:src="@drawable/facebook1"
+            android:scaleType="fitXY"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginBottom="6dp"/>
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:src="@drawable/twitter1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginBottom="6dp"/>
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:src="@drawable/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginBottom="6dp"/>
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:src="@drawable/instagram1"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</RelativeLayout>

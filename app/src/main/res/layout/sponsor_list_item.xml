@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/layer"
+    android:layout_height="55dp">
+
+    <LinearLayout
+        android:background="@drawable/selector_menu"
+        android:id="@+id/sponsorList"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/Icon"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/Title"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            tools:text="Data"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_below="@id/sponsorList"-->
+        <!--android:background="@drawable/menuseprater"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+
+</RelativeLayout>

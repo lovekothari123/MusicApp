@@ -1,0 +1,483 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.djgeraldo.fragments.MenuFragment"
+    android:background="@drawable/dj_grealdo_menu_back_new" >
+
+
+    <ImageView
+        android:layout_marginTop="35dp"
+        android:src="@drawable/dj_grealdo_menuside"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="260dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="-15dp"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dp"
+
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/mPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/filternew" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Main Player" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/musicGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/musicfinal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Music Genres" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/latin"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/musicfinal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Latin Singles" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/english"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/musicfinal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="English Singles" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:alpha="0.4"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/hedaerspareter" />
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="collection"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/playList"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="My Playlist" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fav" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="My Favorites" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:alpha="0.4"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/hedaerspareter" />
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="other features"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/events"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/calnew" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Events" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/gallarynew" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Media Gallery" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_vedio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Videos" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_email" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sign Up" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:alpha="0.4"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/hedaerspareter" />
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Info"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/book"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_booking" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Bookings" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/media"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_social_media" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Social Media" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_notificaion" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Notifications" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/Biography"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/dj_grealdo_menu_biography" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Biography" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/shareApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/sharmyapp1new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Share My App" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/selector_menu"
+                    android:id="@+id/sponsored"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icone_sisko_sponserby" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sponsored By" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

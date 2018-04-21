@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+   >
+
+    <TextView
+        android:id="@+id/titlePlayList"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:text="PlayList Name"
+        android:background="@drawable/selector_menu"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+    <LinearLayout
+        android:background="@drawable/hedaerspareter"
+        android:layout_below="@id/titlePlayList"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>

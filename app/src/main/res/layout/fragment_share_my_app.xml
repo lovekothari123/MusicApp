@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.djgeraldo.fragments.ShareMyApp">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/dj_graldo_golden_back"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:padding="25dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/share_my_app"
+        />
+    <ImageView
+        android:id="@+id/shareApp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+       android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="95dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/sharapp" />
+</RelativeLayout>
+
+
+
+</RelativeLayout>

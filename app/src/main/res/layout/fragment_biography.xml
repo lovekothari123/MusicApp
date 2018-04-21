@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.djgeraldo.fragments.Biography">
+
+    <ImageView
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="-120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/dj_graldo_golden_back"/>
+
+
+
+
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageBio"
+        android:layout_marginRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="180dp"/>
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/imageBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:padding="10dp"
+                tools:text="data"
+                android:textColor="#ffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/textBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>
